@@ -34,10 +34,132 @@ n.js"></script>
 
     <!-- Tab panes -->
     <div class="tab-content">
-      <div role="tabpanel" class="tab-pane active" id="q1">...</div>
-      <div role="tabpanel" class="tab-pane" id="q2">...</div>
-      <div role="tabpanel" class="tab-pane" id="q3">...</div>
-      <div role="tabpanel" class="tab-pane" id="q4">...</div>
+      <div role="tabpanel" class="tab-pane active" id="q1">
+        <div class="row">
+          <div class="col-md-12">
+    //pre
+          </div>
+          <div class="col­-md­-12">
+    <button id="q1Button" type="button" class="btn btn-info">Info</button>
+        </div>
+        <div class="col­-md-­12">
+    //result
+  </div>
+</div>
+
+      <div role="tabpanel" class="tab-pane" id="q2">
+        <div class="row">
+          <div class="col-md-12">
+    //pre
+          </div>
+          <div class="col­-md­-12">
+    <button id="q2Button" type="button" class="btn btn-info">Info</button>
+        </div>
+        <div class="col­-md-­12">
+    <div id="q2result">
+    </div>
+        </div>
+      </div>
+    </div>
+
+      <div role="tabpanel" class="tab-pane" id="q3">
+        <div class="row">
+          <div class="col-md-12">
+    //pre
+          </div>
+          <div class="col­-md­-12">
+    <button id="q3Button" type="button" class="btn btn-info">Info</button>
+        </div>
+        <div class="col­-md-­12">
+    <div id="q3result"></div>
+        </div>
+      </div>
+    </div>
+
+      <div role="tabpanel" class="tab-pane" id="q4">
+        <div class="row">
+          <div class="col-md-12">
+    //pre
+          </div>
+          <div class="col­-md­-12">
+    <button id="q4Button" type="button" class="btn btn-info">Info</button>
+        </div>
+        <div class="col­-md-­12">
+    <div id="q4result"></div>
+        </div>
+      </div>
+
+        <div role="tabpanel" class="tab-pane" id="q5">
+          <div class="row">
+            <div class="col-md-12">
+      //pre
+            </div>
+            <div class="col­-md­-12">
+      <button id="q5Button" type="button" class="btn btn-info">Info</button>
+          </div>
+          <div class="col­-md-­12">
+      <div id="q5result"></div>
+          </div>
+        </div>
+        </div>
+
+          <div role="tabpanel" class="tab-pane" id="q6">
+            <div class="row">
+              <div class="col-md-12">
+        //pre
+              </div>
+              <div class="col­-md­-12">
+        <button id="q6Button" type="button" class="btn btn-info">Info</button>
+            </div>
+            <div class="col­-md-­12">
+        <div id="q6result"></div>
+            </div>
+            </div>
+            </div>
+
+            <div role="tabpanel" class="tab-pane" id="q7">
+              <div class="row">
+                <div class="col-md-12">
+          //pre
+                </div>
+                <div class="col­-md­-12">
+          <button id="q7Button" type="button" class="btn btn-info">Info</button>
+              </div>
+              <div class="col­-md-­12">
+          <div id="q7result"></div>
+              </div>
+            </div>
+          </div>
+
+              <div role="tabpanel" class="tab-pane" id="q8">
+                <div class="row">
+                  <div class="col-md-12">
+            //pre
+                  </div>
+                  <div class="col­-md­-12">
+            <button id="q8Button" type="button" class="btn btn-info">Info</button>
+                </div>
+                <div class="col­-md-­12">
+              <div id="q8result"></div>
+                </div>
+                </div>
+                </div>
+
+                <div role="tabpanel" class="tab-pane" id="q9">
+                  <div class="row">
+                    <div class="col-md-12">
+              //pre
+                    </div>
+                    <div class="col­-md­-12">
+              <button id="q9Button" type="button" class="btn btn-info">Info</button>
+                  </div>
+                  <div class="col­-md-­12">
+              <div id="q9result">
+                  </div>
+                  </div>
+                  </div>
+
+      </div>
     </div>
 
   </div>
@@ -50,7 +172,10 @@ n.js"></script>
 <script>
 
 $(document).ready(function() {
+  $("#q1button").on("click", function(){
+    $("#q1result").html("answer one!");
 
+});
 });
 
 </script>
