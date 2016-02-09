@@ -26,10 +26,15 @@ n.js"></script>
 
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#q1" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-      <li role="presentation"><a href="#q2" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-      <li role="presentation"><a href="#q3" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-      <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+      <li role="presentation" class="active"><a href="#q1" aria-controls="home" role="tab" data-toggle="tab">Question 1</a></li>
+      <li role="presentation"><a href="#q2" aria-controls="profile" role="tab" data-toggle="tab">Question 2</a></li>
+      <li role="presentation"><a href="#q3" aria-controls="messages" role="tab" data-toggle="tab">Question 3</a></li>
+      <li role="presentation"><a href="#q4" aria-controls="settings" role="tab" data-toggle="tab">Question 4</a></li>
+      <li role="presentation"><a href="#q5" aria-controls="settings" role="tab" data-toggle="tab">Question 5</a></li>
+      <li role="presentation"><a href="#q6" aria-controls="settings" role="tab" data-toggle="tab">Question 6</a></li>
+      <li role="presentation"><a href="#q7" aria-controls="settings" role="tab" data-toggle="tab">Question 7</a></li>
+      <li role="presentation"><a href="#q8" aria-controls="settings" role="tab" data-toggle="tab">Question 8</a></li>
+      <li role="presentation"><a href="#q9" aria-controls="settings" role="tab" data-toggle="tab">Question 9</a></li>
     </ul>
 
     <!-- Tab panes -->
@@ -43,7 +48,8 @@ n.js"></script>
     <button id="q1Button" type="button" class="btn btn-info">Info</button>
         </div>
         <div class="col­-md-­12">
-    //result
+          <div id="q1result">
+          </div>
   </div>
 </div>
 
@@ -174,6 +180,36 @@ n.js"></script>
 $(document).ready(function() {
   $("#q1button").on("click", function(){
     $("#q1result").html("answer one!");
+
+});
+
+  $("#q2button").on("click", function(){
+    $("#q2result").html("answer two!");
+
+});
+  $("#q3button").on("click", function(){
+    $("#q3result").html("answer three!");
+
+});
+  $("#q4button").on("click", function(){
+    $("#q4result").html("answer four!");
+
+});
+  $("#q5button").on("click", function(){
+    $("#q5result").html("answer five!");
+
+});
+$("#q6button").on("click", function(){
+  $("#q6result").html("answer six!");
+
+});  $("#q7button").on("click", function(){
+    $("#q7result").html("answer seven!");
+
+});  $("#q8button").on("click", function(){
+    $("#q8result").html("answer eight!");
+
+});  $("#q9button").on("click", function(){
+    $("#q9result").html("answer nine!");
 
 });
 });
