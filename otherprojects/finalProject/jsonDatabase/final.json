@@ -1,42 +1,39 @@
 
 [
 {
-"type":"Netherland Dwarf",
-"name":"Mochi",
-"gender":"Male",
-"image":"images/bun1.jpg",
-"comments" : [{"username":"Amaradici",
+"type":"Beach Resort",
+"name":"Pink Shell Resort & Marina",
+"image":"images/.jpg",
+"comments" : [{"username":"",
               "stars": 5,
-              "comment": "Fits in my hand"
-              },{"username":"NimbleYew",
+              "comment": "Beautiful Pool!"
+              },{"username":"",
               "stars": 3,
-              "comment": "Small!" 
-              },{"username":"SisterStorm",
+              "comment": "The food wasn't that good." 
+              },{"username":"",
               "stars": 3,
-              "comment": "He licks me so much" 
+              "comment": "Beach was wavy but the weather was nice." 
               }]
 },
 {
-"type":"Holland Lop",
-"name":"MooMoo",    
-"gender":"Male",
-"image":"images/bun2.jpg",
-"comments" : [{"username":"Goghost",
+"type":"Cambodia Beach Escape",
+"name":"The Orchid Resort",    
+"image":"images/.jpg",
+"comments" : [{"username":"",
               "stars": 5,
-              "comment": "Ears are the best part"
-              },{"username":"SleepingGeneral",
+              "comment": "Great escape!"
+              },{"username":"",
               "stars": 4,
-              "comment": "Adorable" 
-              },{"username":"KeyboardBlueberry",
+              "comment": "" 
+              },{"username":"",
               "stars": 5,
-              "comment": "Snuggles on my lap" 
+              "comment": "" 
               }]
 },
 {
-"type":"Lion Head",
-"name":"Lion",
-"gender":"Male",
-"image":"images/bun3.jpg",
+"type":"Cuban Luxury Resort",
+"name":"Escapada Luxury Resort",
+"image":"images/.jpg",
 "comments" : [{"username":"WildGod",
               "stars": 5,
               "comment": "Looks liek a cute small lion"
@@ -46,5 +43,51 @@
               },{"username":"Eurobot",
               "stars": 3,
               "comment": "Would do it again" 
+              }]
+ }]
+
+{
+"type":"Palm Resort",
+"name":"Escapada Luxury Resort",
+"image":"images/.jpg",
+"comments" : [{"username":"",
+              "stars": 5,
+              "comment": ""
+              },{"username":"",
+              "stars": 3,
+              "comment": "" 
+              },{"username":"",
+              "stars": 3,
+              "comment": "" 
+              }]
+ }]
+{
+"type":"Resort and Spa",
+"name":"Oceanside Resort",
+"image":"images/.jpg",
+"comments" : [{"username":"",
+              "stars": 5,
+              "comment": ""
+              },{"username":"",
+              "stars": 3,
+              "comment": "" 
+              },{"username":"",
+              "stars": 3,
+              "comment": "" 
+              }]
+ }]
+{
+"type":"Cuban Luxury Resort",
+"name":"Escapada Luxury Resort",
+"image":"images/.jpg",
+"comments" : [{"username":"",
+              "stars": 5,
+              "comment": ""
+              },{"username":"",
+              "stars": 3,
+              "comment": "" 
+              },{"username":"",
+              "stars": 3,
+              "comment": "" 
               }]
  }]
