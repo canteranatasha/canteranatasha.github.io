@@ -4,13 +4,13 @@
 "type":"Beach Resort",
 "name":"Pink Shell Resort & Marina",
 "image":"images/.jpg",
-"comments" : [{"username":"",
+"comments" : [{"username":"Headstall",
               "stars": 5,
               "comment": "Beautiful Pool!"
-              },{"username":"",
+              },{"username":"Fireporcupine",
               "stars": 3,
               "comment": "The food wasn't that good." 
-              },{"username":"",
+              },{"username":"LandPriestess",
               "stars": 3,
               "comment": "Beach was wavy but the weather was nice." 
               }]
@@ -19,13 +19,13 @@
 "type":"Cambodia Beach Escape",
 "name":"The Orchid Resort",    
 "image":"images/.jpg",
-"comments" : [{"username":"",
+"comments" : [{"username":"RhythmKraken",
               "stars": 5,
               "comment": "Great escape!"
-              },{"username":"",
+              },{"username":"LoyalTadpole",
               "stars": 4,
               "comment": "" 
-              },{"username":"",
+              },{"username":"BraceTrout",
               "stars": 5,
               "comment": "" 
               }]
@@ -34,15 +34,15 @@
 "type":"Cuban Luxury Resort",
 "name":"Escapada Luxury Resort",
 "image":"images/.jpg",
-"comments" : [{"username":"WildGod",
+"comments" : [{"username":"Cinnamonster",
               "stars": 5,
-              "comment": "Looks liek a cute small lion"
-              },{"username":"Pandaisy",
+              "comment": ""
+              },{"username":"MagnaSpecter",
               "stars": 3,
-              "comment": "Pretty curious" 
-              },{"username":"Eurobot",
+              "comment": "" 
+              },{"username":"HeartElf",
               "stars": 3,
-              "comment": "Would do it again" 
+              "comment": "" 
               }]
  }]
 
@@ -50,13 +50,13 @@
 "type":"Palm Resort",
 "name":"Escapada Luxury Resort",
 "image":"images/.jpg",
-"comments" : [{"username":"",
+"comments" : [{"username":"AfternoonIdol",
               "stars": 5,
               "comment": ""
-              },{"username":"",
+              },{"username":"OriginalBoy",
               "stars": 3,
               "comment": "" 
-              },{"username":"",
+              },{"username":"SchoolTortiose",
               "stars": 3,
               "comment": "" 
               }]
@@ -65,13 +65,13 @@
 "type":"Resort and Spa",
 "name":"Oceanside Resort",
 "image":"images/.jpg",
-"comments" : [{"username":"",
+"comments" : [{"username":"Conjursa",
               "stars": 5,
               "comment": ""
-              },{"username":"",
+              },{"username":"MadMite",
               "stars": 3,
               "comment": "" 
-              },{"username":"",
+              },{"username":"Brightplum",
               "stars": 3,
               "comment": "" 
               }]
@@ -80,13 +80,13 @@
 "type":"Cuban Luxury Resort",
 "name":"Escapada Luxury Resort",
 "image":"images/.jpg",
-"comments" : [{"username":"",
+"comments" : [{"username":"TravelAlpaca",
               "stars": 5,
               "comment": ""
-              },{"username":"",
+              },{"username":"RottenChomper",
               "stars": 3,
               "comment": "" 
-              },{"username":"",
+              },{"username":"GameGull",
               "stars": 3,
               "comment": "" 
               }]
