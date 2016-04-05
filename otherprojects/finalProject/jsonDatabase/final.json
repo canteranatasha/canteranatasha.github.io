@@ -47,8 +47,8 @@
  }]
 
 {
-"type":"Palm Resort",
-"name":"Escapada Luxury Resort",
+"type":"",
+"name":"Palm Resort",
 "image":"images/.jpg",
 "comments" : [{"username":"AfternoonIdol",
               "stars": 5,
@@ -78,7 +78,7 @@
  }]
 {
 "type":"Cuban Luxury Resort",
-"name":"Escapada Luxury Resort",
+"name":"",
 "image":"images/.jpg",
 "comments" : [{"username":"TravelAlpaca",
               "stars": 5,

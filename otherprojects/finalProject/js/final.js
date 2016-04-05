@@ -22,18 +22,17 @@ $(document).ready(function() {
           $("#pageContent").html(data);
           $('.carousel').carousel();
         })
-      } else if (partial == "seeCatsPage") { //ajax models.html
+      } else if (partial == "seeislandPage") { //ajax models.html
         //paste the getJSON here; change the append id; change the file name
-        $.getJSON("jsonDatabase/finalCats.json", function(data) {
+        $.getJSON("jsonDatabase/final.json", function(data) {
 
             var html = "";
 
             $.each(data, function(index, item) {
                 html += '<div class="col-xs-12 col-md-4 jsonCat">' +
-                  '<div class="catName">' + item.name + '</div>' +
-                  '<div class="catType"><small>type </small>' + item.type + '</div>' +
-                  '<div class="catGender"><small>gender </small>' + item.gender + '</div>' +
-                  '<img class="catImage" src="' + item.image + '"/>' +
+                  '<div class="islandName">' + item.name + '</div>' +
+                  '<div class="islandType"><small>type </small>' + item.type + '</div>' +
+                  '<img class="islandImage" src="' + item.image + '"/>' +
                   //deleted commentsContainer
                   '<div class="panel panel-default">' + //added
                   '<div class="panel-heading">Renter Comments</div>'; //added
@@ -46,9 +45,9 @@ $(document).ready(function() {
                     for (var j = 1; j <= 5; j++) {
 
                       if (j <= i.stars) {
-                        html += '<img src="images/fullStar.png"/>';
+                        html += '<img src="../images/fullstar.jpg"/>';
                       } else {
-                        html += '<img src="images/emptyStar.png"/>';
+                        html += '<img src="../images/empty_star.jpg"/>';
                       }
                     }
                     html += '</div>' + //end stars
@@ -95,7 +94,7 @@ $(document).ready(function() {
 
       //show success message
       $("#successMsg").html("Order Received!<br/><br/>" +
-        order.catSelect + " will be delivered on " + order.startRentDate + "<img id='paws' src='images/catPaws.jpeg'>");
+        order.catSelect + " will be delivered on " + order.startRentDate + "<img id='paws' src='../images/palmtreesymbol.jpg'>");
     }//end sendConfirmation
 
     //begin the program, get the homepage
