@@ -64,33 +64,11 @@ $(document).ready(function() {
           }) //getJSON
       } else if (partial == "orderPage") { //ajax get order.html
         $.get("partials/order2.html", function(data) {
+           
             $("#pageContent").html(data);
 
             //activate the datepicker
-            $('#startRentDate, #endRentDate').datepicker({});
-
-            //user clicks submit
-            $("#submitButton").on("click", function() {
-
-              //add the error class to div of empty inputs
-              $("input, select").filter(function() {
-                return !this.value;
-              }).closest("div").addClass("has-error")
-
-              //remove the error class from all filled inputs
-              $("input, select").filter(function() {
-                return this.value;
-              }).closest("div").removeClass("has-error");
-
-              //get all errors
-              var hasError = $(".has-error");
-
-              //if no errors
-              if (hasError.length < 1) {
-                sendConfirmation();
-              }
-
-            })
+            $('#startRentDate, #endRentDate').datepicker({})
 
           }) //get
       }
