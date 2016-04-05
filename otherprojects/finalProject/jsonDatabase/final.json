@@ -3,7 +3,7 @@
 {
 "type":"Beach Resort",
 "name":"Pink Shell Resort & Marina",
-"image":"images/.jpg",
+"image":"../images/vacation1.jpg",
 "comments" : [{"username":"Headstall",
               "stars": 5,
               "comment": "Beautiful Pool!"
@@ -18,22 +18,22 @@
 {
 "type":"Cambodia Beach Escape",
 "name":"The Orchid Resort",    
-"image":"images/.jpg",
+"image":"../images/vacation2.jpg",
 "comments" : [{"username":"RhythmKraken",
               "stars": 5,
               "comment": "Great escape!"
               },{"username":"LoyalTadpole",
               "stars": 4,
-              "comment": "" 
+              "comment": "Lovely Views." 
               },{"username":"BraceTrout",
               "stars": 5,
-              "comment": "" 
+              "comment": "So much to do at this resort." 
               }]
 },
 {
 "type":"Cuban Luxury Resort",
 "name":"Escapada Luxury Resort",
-"image":"images/.jpg",
+"image":"../images/vacation3.jpg",
 "comments" : [{"username":"Cinnamonster",
               "stars": 5,
               "comment": ""
@@ -49,7 +49,7 @@
 {
 "type":"",
 "name":"Palm Resort",
-"image":"images/.jpg",
+"image":"../images/vacation4.jpg",
 "comments" : [{"username":"AfternoonIdol",
               "stars": 5,
               "comment": ""
@@ -64,7 +64,7 @@
 {
 "type":"Resort and Spa",
 "name":"Oceanside Resort",
-"image":"images/.jpg",
+"image":"../images/vacation5.jpg",
 "comments" : [{"username":"Conjursa",
               "stars": 5,
               "comment": ""
@@ -79,7 +79,7 @@
 {
 "type":"Cuban Luxury Resort",
 "name":"",
-"image":"images/.jpg",
+"image":"../images/vacation6.jpg",
 "comments" : [{"username":"TravelAlpaca",
               "stars": 5,
               "comment": ""
