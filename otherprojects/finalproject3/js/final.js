@@ -42,9 +42,9 @@ $(document).ready(function(){
 				//var numStars = Number(i.stars);
 				for(var j=1;j<=5;j++){
 					if(j <= i.stars){
-					html+='<img src="images/fullStar.png"/>';
+					html+='<img src="../images/fullstar.jpg"/>';
 					}else{
-					html+='<img src="images/emptyStar.png"/>';
+					html+='<img src="../images/emptystar.jpg"/>';
 				}
 				}
 
@@ -135,4 +135,4 @@ $("#log").append("<br>User Clicked the Button");
 
 
 
-}); //closes document ready. 
+}); //closes document ready.
