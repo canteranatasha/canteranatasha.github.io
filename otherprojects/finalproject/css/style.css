@@ -10,10 +10,10 @@ body {
   font-size: 24px;
 }
 .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
-  background-color: #66b3ff;
+  background-color: #7EF7EB;
 }
 .carousel {
-  background: #ffff99;
+  background: #FBFEA5;
   margin-top: 20px;
 }
 .carousel .item img {
@@ -23,10 +23,10 @@ body {
 .bs-example {
   margin: 20px;
 }
-.catImage {
+.islandImage {
   width: 100%;
 }
-.catName {
+.islandName {
   text-align: center;
   font-weight: bold;
   font-size: 24px;
@@ -63,7 +63,6 @@ h1 {
 }
 #submitButton {
   text-align: center;
-      color: #ffff99;
 }
 #orderForm div {
   margin-top: 12px;
@@ -74,17 +73,18 @@ h1 {
   margin-top: 5px;
 }
 .renterName, .catType small, .catGender small{
-  color: #66b3ff;
+  color: #6DB733;
   text-shadow: 0px 1px 1px #000;
   font-style: italic;
   letter-spacing: 5px;
 }
-#paws {
+#palmtree {
   margin-left:15px;
 }
 div#orderForm{
-  margin-top: 2%;
+  margin-top: 5%;
 }
 html,body{
     height: 100%
 }
+
