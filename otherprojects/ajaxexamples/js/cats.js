@@ -1,45 +1,65 @@
-$(document),ready*(function(){
+$(document).ready(function () {
 
-  $.getJSN"jsonDatabase/cat.json",function(data){
 
-    console.dir(data);
-    var html="";
+        $.getJSON("jsonDatabase/jsoncats.json", function (data) {
 
-    $.each(data, function(index, item){
-html += '<div class="col-md-4 cat">'
-'<div class="catName">'+item.name + '</div>'+
-'<div class="catType">'+item.type + '</div>'+
-'<div class="catGender">'+item.gender + '</div>'+
-'img src="' + item.image + '"/>';
-'div claass="commentsContainer">';
-$.each(data, function(index, item){
-  html += '<div vlass="renterName">' + i.username + '<div' +
-  '<div class="renterComment">' + i.comment + '</div>'
-  '<div class="renterStars">' +
-  '</div>'
-}) //each comment
+                console.dir(data);
+                var html = "";
 
-html += '</div>' //commentsContainer
-        '</div>' //col-md-4
 
-    })//each cat
-    $(#catData).append(html);
-  })
-})
+                $.each(data, function (index, item) {
+                        html += '<div class="col-md-4">' +
+                            '<div class = "name" >' + item.name + '</div>' +
+                            '<div class = "flavour" >' + item.flavour + '</div>' +
+                            '<div class = "scoops" >' + item.scoops + '</div>' +
+                            '<img class="icecreamimage" src="' + item.image + '"/>' +
+                            // '<div class="commentsContainer">';
+
+                            '<div class="panel panel-default">' + //added
+                            '<div class="panel-heading">Ice Cream Reviews! </div>'; //added
+                        $.each(item.comments, function (ind, i) {
+                                html += '<div class="panel-body">' + //added
+                                    '<div class ="buyerName">' + i.username + '</div>' +
+                                    '<div class ="buyerComment">' + i.comment + '</div>' +
+                                    '<div class="renderStars">';
+
+                                for (var j = 1; j <= 5; j++) {
+
+                                    if (j <= i.stars) {
+                                        html += '<img src="images/fullstar.png"/>';
+                                    } else {
+                                        html += '<img src="images/emptystar.png"/>';
+                                    }
+
+                                } //var loop
+
+                                html +=
+                                    '</div>' + //end stars
+                                    '</div>'; //panel body
+
+                            }) //each comment 
+
+                        html += '</div>' + // comments container
+                            '</div>' + //panel
+                            '</div>'; //col-md-4
+
+                    }) //EACH
+
+                $("#icecreamdata").append(html);
+
+            }) //getJSON
+
+    }) //FUNCTIONS
 
 /*
-//one per cat
-<div class="col-md-4 cat">
-<div class="catName"></div>
-<div class="">catType</div>
-<div class="">catGender</div>
-<img src=""/>
-<div class="commentsContainer">
-//one per comment
-<div class="">renterName</div>
-<div class="">renterLocation</div>
-<div class="">renterStars</div>
-//5 stars some full, some empty
-</div>//end stars
-</div>//end comment container
-<div>//end cat
+<div class ="col-md-4 icecream">
+<div class ="icecreamName">
+<div class ="icecreamType">
+<div class ="icecream">
+<img src"#"/>
+<div class ="col-md-4">
+<div class ="buyerName">
+<div class ="buyerType">
+<div class ="icecreamStars">
+</div>
+*/
