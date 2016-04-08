@@ -1,138 +1,159 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-	// Get all the nav li, add click event
-	$(".nav").find("li").on("click",function(){
-		// remove all active class
-		$(".nav").find("li").removeClass("active");
-		// add active class to clicked it.
-		$(this).addClass("active");
-		var page = $(this).attr("id");
-		console.log("page" +page);
-		getPartial(page);
+        //get all the nav li, add click event
+        $(".nav").find("li").on("click", function() {
+                $("#pageContent").hide().html("");
+                //remove all active class
+                $(".nav").find("li").removeClass("active");
+                //add active class to clicked li
+                $(this).addClass("active");
 
-	});// closes the $(".nav").find("li").on("click",function()
+                //get the correct page according to click
+                var page = $(this).attr("id");
+                getPartial(page);
 
-	function getPartial(partial) {
+            }) //click
 
-		if (partial === "homePage"){
-				$.get("partials/home.html", function(data){
-					$("#pageContent").html(data);
-					$("#myCarousel").carousel();
+        //get the parital via JSON, add to page, activiate associating js
+        function getPartial(partial) {
 
-		});
+            if (partial == "homePage") { //ajax get home.html
+                $.get("partials/home.html", function(data) {
+                    $("#pageContent").html(data);
+                    $('.carousel').carousel();
+                })
+            } else if (partial == "seeCatsPage") { //ajax models.html
+                //paste the getJSON here; change the append id; change the file name
+                $.getJSON("jsonDatabase/finalCats.json", function(data) {
 
-		}else if (partial === "rentPage"){
-					$.getJSON("jsonDatabase/final.json",function(data){
-		console.dir(data);
-	var html="";
-	$.each(data, function(index, item){
-	html += '<div class="col-md-4 cat">' +
-	'<div class="gameName">' +item.name +'</div>'+
-	'<div class="gameGenre">' +item.genre +'</div>' +
-	'<div class="gameType">' +item.type +'</div>' +
-	'<img class="gameImage" src="' +item.image + '"/>' +
-	'<div class="panel panel-default">' +
-	 '<div class="panel-heading">Information</div>';
+                        var html = "";
 
-	$.each(item.comments, function(ind, i){
-		html+= '<div class="panel-body">' +
-				'<div class="renterName">'+i.username + '</div>' +
-				'<div class="renterLocation">'+i.comment + '</div>' +
-				'<div class="renterStars">';
-				//var numStars = Number(i.stars);
-				for(var j=1;j<=5;j++){
-					if(j <= i.stars){
-					html+='<img src="../images/fullstar.jpg"/>';
-					}else{
-					html+='<img src="../images/emptystar.jpg"/>';
-				}
-				}
+                        $.each(data, function(index, item) {
+                                html += '<div class="col-xs-12 col-md-4 jsonCat">' +
+                                    '<div class="catName">' + item.name + '</div>' +
+                                    '<div class="catType"><small>type </small>' + item.type + '</div>' +
+                                    '<div class="catGender"><small>gender </small>' + item.gender + '</div>' +
+                                    '<img class="catImage" src="' + item.image + '"/>' +
+                                    //deleted commentsContainer
+                                    '<div class="panel panel-default">' + //added
+                                    '<div class="panel-heading">Renter Comments</div>'; //added
+                                $.each(item.comments, function(ind, i) {
+                                        html += '<div class="panel-body">' + //added
+                                            '<div class="renterName"><small>' + i.username + '</small></div>' +
+                                            '<div class="renterComment">' + i.comment + '</div>' +
+                                            '<div class="renterStars">';
 
-				html+= '</div></div>';//end stars
+                                        for (var j = 1; j <= 5; j++) {
 
-	});//Each comment
+                                            if (j <= i.stars) {
+                                                html += '<img src="images/fullStar.png"/>';
+                                            } else {
+                                                html += '<img src="images/emptyStar.png"/>';
+                                            }
+                                        }
+                                        html += '</div>' + //end stars
+                                            '</div>'; //panel body
+                                    }) //each comment
 
+                                html += '</div>' + //panel
+                                    '</div>'; //col-md-4
+                            }) //each cat
 
-	// do some stuff
-	html += '</div>'+ //comment container
-	 '</div>';	//col-md-4
-	}); //each cat
+                        $("#pageContent").html(html);
 
-	$("#pageContent").html(html);
-	});
+                    }) //getJSON
+            } else if (partial == "orderPage") { //ajax get order.html
+                $.get("partials/order2.html", function(data) {
 
-	// ORDER PAGE STARTS
-		}else if (partial === "orderPage"){
+                        $("#pageContent").html(data);
 
-			$.get("partials/order.html", function(data){
-			$("#pageContent").html(data);
+                        $('#startRentDate, #endRentDate').datepicker({});
 
-		//TAKE AN ORDER JS STYLING RIGHT HERE!!!!!
-		$("#search").on("focus", function(){
-		$("#log").append("<br>Search background-color");
-		$(this).css("background-color", "blue");
-	})
+                        $("#submitButton").on("click", function() {
 
-	.on("blur", function(){
-		$("#log").append("<br>when box not selected, turn white");
-		$(this).css("background-color", "#FFF");
-	});
+                                //get all empty inputs and select
+                                //add error class to div container
+                                $("input, select").filter(function() {
+                                    return !this.value;
+                                }).closest("div").addClass("has-error");
 
-	$("#textBox").on("focus", function(){
-		$("#log").append("<br>give message about their purchace");
-		var val = $(this).val();
-		$("#textBox").html(val +"Great Choice!");
-	});
+                                //remove error class for non empty ones
+                                $("input, select").filter(function() {
+                                    return this.value; //removed !
+                                }).closest("div").removeClass("has-error");
 
+                                var errors = $(".has-error");
 
-	$("#orderButton").mouseenter(function(){
-		$(this).text("ORDER NOW!!");
-		$("#log").append("<br> Button mouseenter");
-	})
-		.on("mouseleave",function(){
-		$("#log").append("<br>Button mouseleave");
-		$(this).text("Click Me!");
-	});
+                                if (errors.length < 1) {
+                                    //alert("no errors");
+                                    sendConfirmation();
+                                }
 
-	$("#myChoice").change(function(){
-		var choice = $(this).val();
-		$("#myChoiceMessage").html(choice +" whatever you want");
-		$("#log").append("<br> User change selection");
-	});
+                            }) //click
+                    }) //get
+            }
+            $("#pageContent").fadeIn();
 
-	$("#orderButton").click(function(){
+        }
 
-		var mySearch = $("#search").val();
-		var myTextbox = $("#textBox").val();
-		var mySelect = $("#myChoice").val();
-		var myGender = $("[name='gender']:checked").val();
+        function sendConfirmation() {
+            //make an object to record data for database;
+            var order = {};
+            //get all teh jquery objects
+            var formData = $("input, select");
+            //for each jquery object
+            formData.each(function() {
+                var id = $(this).attr("id");//get the id of the element
+                order[id] = $(this).val();//set the field and the value
+            })
 
-			var myCheckValues = [];
-			//each is a jquery loop for objects/arrays
-			// each thing is selcted, do function
-			// "this" is the element we are currently looking at.
-    $("[name='vehicle']:checked").each(function() {
-        myCheckValues.push($(this).val());
-    });
+            alert("Sending to database " + JSON.stringify(order));
+            $("#successMsg").html("Order Received!<br/><br/>" +
+              order.catSelect + " will be delivered on " +
+              order.startRentDate +
+              "<img id='paws' src='images/catPaws.jpeg'>");
 
-$("#log").append("<br>User Clicked the Button");
+        } //sendConfirmation
 
-		$("#log").append("<br>Value of input is: "+mySearch);
-		$("#log").append("<br>Value of textarea is: "+myTextbox);
-		$("#log").append("<br>Value of select is: "+mySelect);
-		$("#log").append("<br>Value of radio button is: "+myGender);
-		$("#log").append("<br>Value of check values is: "+myCheckValues.join());
+        //begin the program, get the homepage
+        getPartial("homePage");
 
-
-	});
-
-		});
-
-			}
-	}
-	// begin Program, get the homepage
-	getPartial("homePage");
-
-
-
-}); //closes document ready.
+    }) //ready
+    /*
+                //activate the datepicker
+                $('#startRentDate, #endRentDate').datepicker({});
+                //user clicks submit
+                $("#submitButton").on("click", function() {
+                  //add the error class to div of empty inputs
+                  $("input, select").filter(function() {
+                    return !this.value;
+                  }).closest("div").addClass("has-error")
+                  //remove the error class from all filled inputs
+                  $("input, select").filter(function() {
+                    return this.value;
+                  }).closest("div").removeClass("has-error");
+                  //get all errors
+                  var hasError = $(".has-error");
+                  //if no errors
+                  if (hasError.length < 1) {
+                    sendConfirmation();
+                  }
+                })
+                //do when order valid
+                function sendConfirmation() {
+                  //we will store all our order information here
+                  var order = {};
+                  //get all input values
+                  var inputs = $("input, select");
+                  //put all the input values into object ; this each can be done with jquery objects
+                  inputs.each(function() {
+                    var id = $(this).attr("id");
+                    order[id] = $(this).val();
+                  })
+                  //act as if sending to databse
+                  alert("send to databse: " + JSON.stringify(order));
+                  //show success message
+                  $("#successMsg").html("Order Received!<br/><br/>" +
+                    order.catSelect + " will be delivered on " + order.startRentDate + "<img id='paws' src='images/catPaws.jpeg'>");
+                }//end sendConfirmation
+    */
