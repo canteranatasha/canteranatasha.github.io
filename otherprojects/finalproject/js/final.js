@@ -109,7 +109,7 @@ $(document).ready(function() {
 
             alert("Sending to database " + JSON.stringify(order));
             $("#successMsg").html("Order Received!<br/><br/>" +
-              order.catSelect + " will be delivered on " +
+              order.catSelect + " will be delivered on " + 
               order.startRentDate +
               "<img id='paws' src='images/catPaws.jpeg'>");
 
