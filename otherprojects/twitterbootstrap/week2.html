@@ -1,119 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h1 class="panel-title">Panel Title</h1>
-            </div>
-            <div class="panel-body">Panel content…</div>
-            </div>
-        <link rel="stylesheet"   href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    </head>
+
+<head>
+  <title>Week 2 practice</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="http://canteranatasha.github.io/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style type="text/css">
+    /* Some custom styles to beautify this example */
+
+    .demo-content {
+      padding: 15px;
+      font-size: 18px;
+      min-height: 300px;
+      background: #dbdfe5;
+      margin-bottom: 10px;
+    }
+
+    .demo-content.bg-alt {
+      background: #abb1b8;
+    }
+  </style>
+</head>
+
 <body>
-    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Tutorial Republic</a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="http://www.tutorialrepublic.com" target="_blank">Home</a></li>
-                <li><a href="http://www.tutorialrepublic.com/about-us.php" target="_blank">About</a></li>
-                <li><a href="http://www.tutorialrepublic.com/contact-us.php" target="_blank">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-<div class="container">
-    <div class="jumbotron">
-        <h1>Learn to Create Websites</h1>
-            <a href="http://www.tutorialrepublic.com" target="_blank">
-        <p><a href="http://www.tutorialrepublic.com" target="_blank"   class="btn btn-success btn-lg">Get started today</a></p>
-    </div>
+  <div class="container">
+    <!-- Stack the columns on mobile by making one full-width and the other half-width -->
     <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-2">
-           <img src="brown-pitbull-puppy.jpg" class="img-rounded" alt="Rounded Image">
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 bg-success">
-<div class="media">
-    <div class="media-left">
-        <a href="#">
-            <img src="twitter-egg-icon.jpg" class="media-object" alt="Sample Image">
-        </a>
-    </div>
-    <div class="media-body">
-        <h4 class="media-heading">John Carter <small><i>Posted on January 10, 2014</i></small></h4>
-        <p>Excellent feature! I love it. One day I'm definitely going to put this Bootstrap component into use and I'll let you know once I do.</p>
-    </div>
-</div>
-        </div>
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-2 bg-info">
-           <span class="glyphicon glyphicon-glass"></span>
-            <span class="glyphicon glyphicon-camera"></span>
-            Quisque ut finibus ex. Phasellus sed justo feugiat, consequat quam sed, iaculis arcu. In auctor non justo at vestibulum. Suspendisse porta odio rhoncus massa posuere, nec ultricies diam vestibulum. Cras mattis risus sit amet mi rhoncus fermentum. Suspendisse a aliquet tortor. Quisque rutrum mollis ipsum, nec suscipit arcu malesuada sed. Integer sodales odio vel metus posuere, vel dapibus erat volutpat.
+      <div class="col-xs-12 col-md-8 bg-primary">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam maximus gravida velit, ultrices congue sapien ultrices id. Phasellus ante nunc, pretium et urna eget, porta tempor urna. Duis tincidunt ante a posuere tincidunt. Sed laoreet vel orci
+        scelerisque placerat. Nunc bibendum orci quis nulla egestas, dapibus luctus lorem luctus. Vivamus quis diam accumsan, consequat libero sagittis, pretium leo. In vitae elementum metus, a aliquet dui. Donec pulvinar gravida eros id volutpat. Aenean
+        a ex ac nisl blandit consectetur. Aenean scelerisque mauris arcu, non vulputate ligula ornare sed. Integer nec risus velit. Vestibulum ultrices tellus non sem tempor lobortis.
+      </div>
+      <div class="col-xs-6 col-md-4bg-success bg-info">Ut diam erat, interdum eget mollis at, eleifend eu magna. Integer commodo, elit vitae ullamcorper accumsan, libero sem faucibus risus, lacinia condimentum lectus diam at mauris. Mauris imperdiet mauris et laoreet suscipit. Nam sit amet turpis ante.
+        Praesent et viverra tortor. Fusce at rutrum est. Suspendisse potenti. Quisque egestas lorem magna, eget tempor leo laoreet nec. Vivamus sapien urna, fermentum dignissim interdum commodo, maximus non lorem. Curabitur eu diam a leo efficitur tempor
+        vitae eu urna. Etiam et gravida elit.
 
-        </div>
-         <div class="container">
-            <div class="row">
-                <div class="col-xs-3">
-            <a href="#" class="thumbnail">
-                <img src="badge-natashacantera.png" alt="125x125">
-            </a>
-        </div>
-            <div class="col-xs-3">
-                <a href="#" class="thumbnail">
-                <img src="badge2-natashacantera.png" alt="125x125">
-            </a>
-        </div>
-            <div class="col-xs-3">
-                <a href="#" class="thumbnail">
-                <img src="badge3-natashacantera.png" alt="125x125">
-            </a>
-        </div>
+      </div>
     </div>
-</div>
-        <div class="clearfix visible-md-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-2 bg-warning">
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis orci justo, varius at efficitur quis, faucibus in elit. Duis at rutrum purus, et consectetur ligula. Integer sed tellus ut sapien sollicitudin tempor accumsan sit amet ligula. Aliquam dui lacus, dictum ac pretium sed, ornare in tellus. Vestibulum ut nibh convallis, tincidunt ex eget, vestibulum diam. Mauris massa dolor, tristique vitae nibh ut, euismod efficitur ex. Proin malesuada pretium lectus.
-        <div class="progress progress-striped active">
-            <div class="progress-bar" style="width: 60%;">
-        <span class="sr-only">60% Complete</span>
-        </div>
-        </div>
-        </div>
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-2 bg-danger">
- Sed sed ullamcorper lacus, ut placerat mauris. Donec vel sodales velit, ac feugiat sem. Integer et egestas ligula, sit amet sagittis orci. Quisque sit amet ipsum hendrerit est sollicitudin eleifend id in massa. Nullam vulputate purus at porttitor ultricies. Proin consequat libero id laoreet pharetra. Integer quis auctor purus. Nullam nisi mi, mollis eget vestibulum at, efficitur a lorem. Maecenas cursus nisl tellus, a lacinia quam lacinia in.
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-2 bg-primary">
-            Vestibulum eget urna vestibulum, mollis mauris ut, dictum dolor. Vestibulum a lacus quis enim aliquam ultrices. Maecenas non aliquam orci, eu luctus dolor. Vestibulum porttitor risus ligula, et accumsan dui iaculis eu. Morbi vulputate diam ac sodales congue. Nulla facilisi. Pellentesque eu eros pulvinar leo maximus interdum et vel ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla facilisi.
-        </div>
-    </div>
-    <hr>
+
+    <!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
     <div class="row">
-        <div class="col-sm-12">
-            <div class="panel panel-default">
-    <div class="panel-body">© Copyright 2013 Tutorial Republic</div> 
-    <div class="panel-footer clearfix">
-        <div class="pull-right">
-            <a href="#" class="btn btn-primary">Learn More</a>
-            <a href="#" class="btn btn-default">Go Back</a>
-        </div>
+      <div class="col-xs-6 col-md-4 bg-warning">Aliquam pharetra metus sem, in elementum tellus volutpat quis. Donec lacinia ex aliquam, pulvinar tellus ut, ullamcorper libero. Mauris feugiat ullamcorper odio, non hendrerit mi aliquam vel. Curabitur finibus ipsum a ante lacinia accumsan. Sed
+        in diam id turpis fringilla tristique a nec risus. In posuere semper purus, ut tempus augue commodo in. Etiam cursus molestie suscipit. Nulla euismod urna scelerisque, accumsan lectus a, dapibus augue. Proin mattis quam nec consectetur sollicitudin.
+        Duis congue massa eu augue ultrices feugiat. Nullam vitae odio justo. Integer ornare magna ante, eu egestas ligula aliquet vitae.
+        <button class="btn btn-default" type="submit">Button</button>
+      </div>
+      <div class="col-xs-6 col-md-4 bg-danger">Aliquam vitae ultrices velit, eget vehicula lacus. Pellentesque ut elementum dui. Sed ut arcu sit amet lectus venenatis efficitur. Nulla sed ante eget metus laoreet tincidunt vel et massa. Praesent tincidunt at diam sodales tincidunt. Quisque fermentum
+        vehicula nibh at volutpat. Donec arcu tortor, pulvinar eget accumsan sed, vulputate ac leo. Nulla interdum auctor libero, nec rutrum quam congue eget.
+      </div>
+      <div class="col-xs-6 col-md-4 bg-success">Proin imperdiet eros tincidunt venenatis pellentesque. In hac habitasse platea dictumst. Morbi mauris tortor, cursus porttitor odio in, pellentesque venenatis mauris. Suspendisse potenti. Praesent non condimentum massa. Etiam consequat neque sed
+        justo congue, in convallis nibh pellentesque. Maecenas blandit massa metus, quis maximus odio dignissim in. Nullam nec efficitur sem, maximus feugiat purus. Pellentesque erat ex, luctus et sollicitudin et, hendrerit sagittis eros. In ac nibh dui.
+        In nec magna lectus.
+      </div>
     </div>
-</div>
+
+    <!-- Columns are always 50% wide, on mobile and desktop -->
+    <div class="row">
+      <div class="col-xs-6 bg-info">
+        <button type="button" class="btn btn-info">Info</button>
+        Etiam convallis dolor nunc, eu lacinia tortor posuere sed. Nam mattis eros tortor, vitae placerat purus efficitur sed. Cras a nulla luctus, tincidunt nunc vel, euismod tellus. Pellentesque est neque, blandit in sodales placerat, scelerisque sed ipsum.
+        Donec id dolor nunc. Sed rhoncus nisl sed placerat posuere. Vestibulum lacus quam, luctus id malesuada id, lobortis vitae turpis. Quisque ligula nulla, imperdiet et felis vitae, venenatis pulvinar nulla. Duis rhoncus vulputate augue vehicula sagittis.
+        Phasellus vitae felis quis augue tempus fermentum</div>
+      <div class="col-xs-6 bg-primary">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean rutrum urna ut leo posuere, id auctor dolor mollis. Curabitur et massa non mi euismod aliquet. Etiam euismod enim sit amet urna blandit sollicitudin.
+        Nullam et turpis faucibus, posuere quam sollicitudin, tincidunt lacus. Pellentesque sagittis massa justo, eget aliquet tellus fringilla ut. Integer nec tincidunt est. Maecenas lobortis metus tincidunt, accumsan sapien sit amet, volutpat erat.
+        Proin a sapien blandit, tincidunt ante id, lobortis enim. Vivamus commodo, lectus a dapibus semper, ante est luctus est, non commodo nibh dolor in purus. Nulla nibh nisi, cursus a arcu sit amet, dignissim efficitur nunc. Aliquam et nibh eget metus
+        porttitor viverra in ac dolor. Donec feugiat, est nec interdum sodales, tellus massa dignissim nulla, in malesuada urna purus id nibh.</div>
+    </div>
+  </div>
+  <script src="http://canteranatasha.github.io/js/getNav.js"></script>
 </body>
-</html>                                		
 
+</html>

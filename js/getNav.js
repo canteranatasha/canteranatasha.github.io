@@ -1,4 +1,3 @@
-
 //get the file (replace with your own url)
 $.get("http://canteranatasha.github.io/partials/nav.html", function(data) {
 

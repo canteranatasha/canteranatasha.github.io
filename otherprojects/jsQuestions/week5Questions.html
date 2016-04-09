@@ -84,23 +84,29 @@
                         6. Range array
                         Write a range function that takes two arguments, start and end, and returns an
                         array containing all the numbers from start up to (and including) end.
+
                         (Note that you can use the .join() method on an array to output an array)
                         http://www.w3schools.com/jsref/jsref_join.asp
+
                         range(2,5);
                         // [2,3,4,5]
+
                         */
     $(document).ready(function() {
+
       //always need to comment a function
       //say what is does (esp say what it returns)
       // say what the parameters are
       //inside the function:
       //say what each variable is
       //say what each code block does
+
       //this function returns a range of values in an array
       //it takes two parameters, start and end
       function range(start, end) {
         //values will go in this array
         var arr = [];
+
         //go through each value and add to array
         if (start <= end) {
           for (start; start <= end; start++) {
@@ -109,11 +115,16 @@
         }
         return arr;
       }
+
       $("#q6Button").on("click", function() {
+
         //range(3,5);
         var rangeAnswer = range(9, 6);
+
         $("#q6Answer").html("Answer is: " + rangeAnswer.join());
+
       });
+
     });
   </script>
   <script src="http://canteranatasha.github.io/js/getNav.js"></script>
