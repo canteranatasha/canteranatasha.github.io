@@ -109,7 +109,7 @@ $(document).ready(function() {
 
             alert("Sending to database " + JSON.stringify(order));
             $("#successMsg").html("Order Received!<br/><br/>" +
-              order.catSelect + " will be delivered on " + 
+              order.catSelect + " will be delivered on " +
               order.startRentDate +
               "<img id='paws' src='images/catPaws.jpeg'>");
 
@@ -118,7 +118,8 @@ $(document).ready(function() {
         //begin the program, get the homepage
         getPartial("homePage");
 
-    })
+    }) //ready
+    /*
                 //activate the datepicker
                 $('#startRentDate, #endRentDate').datepicker({});
                 //user clicks submit
@@ -153,6 +154,6 @@ $(document).ready(function() {
                   alert("send to databse: " + JSON.stringify(order));
                   //show success message
                   $("#successMsg").html("Order Received!<br/><br/>" +
-                    order.catSelect + " will be delivered on " + order.startRentDate + "<img id='paws' src='images/palmtreessymbol.jpg'>");
+                    order.catSelect + " will be delivered on " + order.startRentDate + "<img id='paws' src='images/catPaws.jpeg'>");
                 }//end sendConfirmation
     */

@@ -2,7 +2,7 @@
   "type": "Calico",
   "name": "Paws",
   "gender": "Male",
-  "image": "images/cat7.jpg",
+  "image": "images/cat1.jpg",
   "comments": [{
     "username": "AboveAlpha",
     "stars": 5,
@@ -20,7 +20,7 @@
   "type": "Tabby",
   "name": "Mittens",
   "gender": "Female",
-  "image": "images/cat5.jpg",
+  "image": "images/cat2.jpg",
   "comments": [{
     "username": "Jubeamese",
     "stars": 4,
@@ -38,7 +38,7 @@
   "type": "Siamese",
   "name": "Robert",
   "gender": "Unspecified",
-  "image": "images/cat6.jpg",
+  "image": "images/cat3.jpg",
   "comments": [{
     "username": "Ravenertu",
     "stars": 2,
@@ -53,3 +53,4 @@
     "comment": "Reminded me of my old cat"
   }]
 }]
+
