@@ -1,6 +1,7 @@
 /**/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300italic);
 body {
-  font-family: 'Fira Sans', serif;
+  font-family: 'Raleway', serif;
 background-image: url(../images/upfeathers.png);
 }
 .nav, .carousel, .jsonCat {
