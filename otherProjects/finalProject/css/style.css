@@ -1,5 +1,6 @@
 /**/
 body {
+        background-image: url("images/upfeather.png");
   font-family: 'Fira Sans', serif;
 }
 .nav, .carousel, .jsonCat {
