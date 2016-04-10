@@ -1,0 +1,55 @@
+[{
+  "type": "Resort & Marina",
+  "name": "Pink Shell",
+  "location": "Cuba",
+  "image": "../images/vacation1.jpg",
+  "comments": [{
+    "username": "Headstall",
+    "stars": 5,
+    "comment": "Beautiful Pool"
+  }, {
+    "username": "Fireporcupine",
+    "stars": 2,
+    "comment": "The food wasn't great.."
+  }, {
+    "username": "LandPriestess",
+    "stars": 4,
+    "comment": "Beach was wavy but the weather was nice."
+  }]
+}, {
+  "type": "Resort & Spa",
+  "name": "Palm Resort",
+  "location": "Fiji",
+  "image": "../images/vacation2.jpg",
+  "comments": [{
+    "username": "AfternoonIdol",
+    "stars": 4,
+    "comment": "Great escape!"
+  }, {
+    "username": "LoyalTadpole",
+    "stars": 5,
+    "comment": "Lovely views."
+  }, {
+    "username": "BraveTrout",
+    "stars": 5,
+    "comment": "So much to do at this Resort!"
+  }]
+}, {
+  "type": "Luxury Resort",
+  "name": "Escapada Resort",
+  "location": "Hawaii",
+  "image": "../images/vacation3.jpg",
+  "comments": [{
+    "username": "Cinnamonster",
+    "stars": 2,
+    "comment": "Pool wasn't clean."
+  }, {
+    "username": "GameGull",
+    "stars": 1,
+    "comment": "Meh"
+  }, {
+    "username": "TravelAlpaca",
+    "stars": 5,
+    "comment": "Gorgeous, they treated me like royalty!"
+  }]
+}]

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Week 5 and 6 questions</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="http://canteranatasha.github.io/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="bs-example">
+      <ul class="nav nav-tabs">
+        <!--make sure li href matches the id in the corresponding tab-pane-->
+        <li class="active"><a data-toggle="tab" href="#q6">Q6</a></li>
+        <li><a data-toggle="tab" href="#q2">Q2</a></li>
+        <li><a data-toggle="tab" href="#q3">Q3</a></li>
+        <li><a data-toggle="tab" href="#q4">Q4</a></li>
+        <li><a data-toggle="tab" href="#q5">Q5</a></li>
+      </ul>
+      <div class="tab-content">
+        <div id="q6" class="tab-pane fade in active">
+          <h3>Question 6</h3>
+          <pre>
+            //this function returns a range of values in an array
+            //it takes two parameters, start and end
+            function range(start, end) {
+              //values will go in this array
+              var arr = [];
+
+              //go through each value and add to array
+              if (start <= end) {
+                for (start; start <= end; start++) {
+                  arr.push(start);
+                }
+              }
+              return arr;
+            }
+          </pre>
+          <button id="q6Button" type="button" class="btn btn-default">Do Question 6</button>
+          <div id="q6Answer"></div>
+          <!--put answer here-->
+          <!--naming convention to use is camelCase   var thisIsMyVariable-->
+        </div>
+        <div id="q2" class="tab-pane fade">
+          <h3>Question 2</h3>
+          <pre>Code will go in here to display</pre>
+          <button id="q2Button" type="button" class="btn btn-default">Do Question 2</button>
+          <div id="q2Answer"></div>
+          <!--put answer here-->
+        </div>
+        <div id="q3" class="tab-pane fade">
+          <h3>Question 3</h3>
+          <pre>Code will go in here to display</pre>
+          <button id="q3Button" type="button" class="btn btn-default">Do Question 3</button>
+          <div id="q3Answer"></div>
+          <!--put answer here-->
+        </div>
+        <div id="q4" class="tab-pane fade">
+          <h3>Question 4</h3>
+          <pre>Code will go in here to display</pre>
+          <button id="q4Button" type="button" class="btn btn-default">Do Question 4</button>
+          <div id="q4Answer"></div>
+          <!--put answer here-->
+        </div>
+        <div id="q5" class="tab-pane fade">
+          <h3>Question 5</h3>
+          <pre>Code will go in here to display</pre>
+          <button id="q5Button" type="button" class="btn btn-default">Do Question 5</button>
+          <div id="q5Answer"></div>
+          <!--put answer here-->
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script>
+    /*
+                        6. Range array
+                        Write a range function that takes two arguments, start and end, and returns an
+                        array containing all the numbers from start up to (and including) end.
+
+                        (Note that you can use the .join() method on an array to output an array)
+                        http://www.w3schools.com/jsref/jsref_join.asp
+
+                        range(2,5);
+                        // [2,3,4,5]
+
+                        */
+    $(document).ready(function() {
+
+      //always need to comment a function
+      //say what is does (esp say what it returns)
+      // say what the parameters are
+      //inside the function:
+      //say what each variable is
+      //say what each code block does
+
+      //this function returns a range of values in an array
+      //it takes two parameters, start and end
+      function range(start, end) {
+        //values will go in this array
+        var arr = [];
+
+        //go through each value and add to array
+        if (start <= end) {
+          for (start; start <= end; start++) {
+            arr.push(start);
+          }
+        }
+        return arr;
+      }
+
+      $("#q6Button").on("click", function() {
+
+        //range(3,5);
+        var rangeAnswer = range(9, 6);
+
+        $("#q6Answer").html("Answer is: " + rangeAnswer.join());
+
+      });
+
+    });
+  </script>
+  <script src="http://canteranatasha.github.io/js/getNav.js"></script>
+</body>
+
+</html>
