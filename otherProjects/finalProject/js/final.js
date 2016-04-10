@@ -24,7 +24,7 @@ $(document).ready(function() {
                 })
             } else if (partial == "seeCatsPage") { //ajax models.html
                 //paste the getJSON here; change the append id; change the file name
-                $.getJSON("jsonDatabase/finalCats.json", function(data) {
+                $.getJSON("jsonDatabase/final.json", function(data) {
 
                         var html = "";
 
@@ -32,7 +32,7 @@ $(document).ready(function() {
                                 html += '<div class="col-xs-12 col-md-4 jsonCat">' +
                                     '<div class="catName">' + item.name + '</div>' +
                                     '<div class="catType"><small>type </small>' + item.type + '</div>' +
-                                    '<div class="catGender"><small>gender </small>' + item.location + '</div>' +
+                                    '<div class="catGender"><small>location </small>' + item.location + '</div>' +
                                     '<img class="catImage" src="' + item.image + '"/>' +
                                     //deleted commentsContainer
                                     '<div class="panel panel-default">' + //added
@@ -109,9 +109,9 @@ $(document).ready(function() {
 
             alert("Sending to database " + JSON.stringify(order));
             $("#successMsg").html("Order Received!<br/><br/>" +
-              order.catSelect + " will be delivered on " + 
+              order.catSelect + " will be expecting you on " + 
               order.startRentDate +
-              "<img id='paws' src='/images/palmtreesymbol.jpg'>");
+              "<img id='paws' src='images/palmtreesymbol.jpg'>");
 
         } //sendConfirmation
 
