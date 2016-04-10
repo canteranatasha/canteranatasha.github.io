@@ -32,7 +32,7 @@ $(document).ready(function() {
                                 html += '<div class="col-xs-12 col-md-4 jsonCat">' +
                                     '<div class="catName">' + item.name + '</div>' +
                                     '<div class="catType"><small>type </small>' + item.type + '</div>' +
-                                    '<div class="catGender"><small>gender </small>' + item.gender + '</div>' +
+                                    '<div class="catGender"><small>gender </small>' + item.location + '</div>' +
                                     '<img class="catImage" src="' + item.image + '"/>' +
                                     //deleted commentsContainer
                                     '<div class="panel panel-default">' + //added
