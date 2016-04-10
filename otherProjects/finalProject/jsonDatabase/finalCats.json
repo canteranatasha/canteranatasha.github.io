@@ -2,7 +2,7 @@
   "type": "Resort & Marina",
   "name": "Pink Shell",
   "location": "Cuba",
-  "image": "../images/vacation1.jpg",
+  "image": "images/vacation1.jpg",
   "comments": [{
     "username": "Headstall",
     "stars": 5,
@@ -20,7 +20,7 @@
   "type": "Resort & Spa",
   "name": "Palm Resort",
   "location": "Fiji",
-  "image": "../images/vacation2.jpg",
+  "image": "images/vacation2.jpg",
   "comments": [{
     "username": "AfternoonIdol",
     "stars": 4,
@@ -38,7 +38,7 @@
   "type": "Luxury Resort",
   "name": "Escapada Resort",
   "location": "Hawaii",
-  "image": "../images/vacation3.jpg",
+  "image": "images/vacation3.jpg",
   "comments": [{
     "username": "Cinnamonster",
     "stars": 2,
